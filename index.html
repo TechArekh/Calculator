@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Calculator</title>
+    <!----------------Google-Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!----------------------Font-Awesome-->
+    <script src="https://kit.fontawesome.com/5b686f6bd8.js" crossorigin="anonymous"></script>
+    <!------------------------Style-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Mukta', sans-serif;
+        }
+
+        .form-body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form {
+            border: solid 5px rgb(255, 255, 255);
+            width: 200px;
+            height: 390px;
+            margin: 20px;
+            padding: 40px;
+            border-radius: 20px;
+            background-color: blue;
+        }
+
+        .title {
+            text-align: center;
+            color: blue;
+            font-size: 39px;
+            font-weight: 900;
+        }
+
+        #calc {
+            border-radius: 10px;
+            border: solid 3px rgb(255, 255, 255);
+            width: 200px;
+            height: 30px;
+        }
+
+        #calc:hover {
+            border: solid 5px white;
+        }
+
+        .button {
+            height: 20px;
+            width: 90px;
+            background: white;
+            border: solid 3px white ;
+        }
+        .equal{
+            width: 90px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Online Calculator</h1>
+    <div class="form-body">
+        <form class="form" name="form1">
+            <input id="calc" type="text" name="answer"> <br> <br>
+            <input type="button" value="1" onclick="form1.answer.value += '1' " class="button">
+            <input type="button" value="2" onclick="form1.answer.value += '2' " class="button">
+            <input type="button" value="3" onclick="form1.answer.value += '3' " class="button">
+            <input type="button" value="+" onclick="form1.answer.value += '+' " class="button">
+            <br> <br>
+
+            <input type="button" value="4" onclick="form1.answer.value += '4' " class="button">
+            <input type="button" value="5" onclick="form1.answer.value += '5' " class="button">
+            <input type="button" value="6" onclick="form1.answer.value += '6' " class="button">
+            <input type="button" value="-" onclick="form1.answer.value += '-' " class="button">
+            <br> <br>
+
+            <input type="button" value="7" onclick="form1.answer.value += '7' " class="button">
+            <input type="button" value="8" onclick="form1.answer.value += '8' " class="button">
+            <input type="button" value="9" onclick="form1.answer.value += '9' " class="button">
+            <input type="button" value="*" onclick="form1.answer.value += '*' " class="button">
+            <br> <br>
+
+
+            <input type="button" value="/" onclick="form1.answer.value += '/' " class="button">
+            <input type="button" value="0" onclick="form1.answer.value += '0' " class="button">
+            <input type="button" value="." onclick="form1.answer.value += '.' " class="button">
+            <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value) " class="equal">
+            <br>
+        </form>
+       <a href="https://twitter.com/OfficialArekh"><i class="fa-brands fa-twitter" style="color: #005eff;"></i></a>
+    </div>
+</body>
+
+</html>
